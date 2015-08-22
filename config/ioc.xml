@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>
+	<bean id="window" class="com.sllx.tetris.ui.Window">
+		<property name="panel" ref="panel"/>
+	</bean>
+	<bean id="panel" class="com.sllx.tetris.ui.Panel">
+		<property name="playerController" ref="playerController"/>
+	</bean>
+	<bean id="service" class="com.sllx.tetris.service.Service"/>
+	<bean id="gameController" class="com.sllx.tetris.control.GameController">
+		<property name="panel" ref="panel"/>
+		<property name="service" ref="service"/>
+	</bean>
+	<bean id="playerController" class="com.sllx.tetris.control.PlayerController">
+		<property name="gameController" ref="gameController"/>
+	</bean>
+	<bean id="tetrisTimerTask" class="util.TetrisTimerTask">
+		<property name="gameController" ref="gameController"/>
+	</bean>
+	<bean id="timerTaskLauncher" class="util.TimerTaskLauncher">
+		<property name="tetrisTimerTask" ref="tetrisTimerTask"/>
+	</bean>
+</structure>

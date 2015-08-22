@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<window title="俄罗斯方块" w="1162" h="694" windowUp="40" box_padding="12">
+		<box className="com.sllx.tetris.ui.Box_Background" x="0" y="0" w="1162" h="694"/>
+		<box className="com.sllx.tetris.ui.Box_DataBase" x="40" y="32" w="334" h="279"/>
+		<box className="com.sllx.tetris.ui.Box_Disk" x="40" y="343" w="334" h="279"/>
+		<box className="com.sllx.tetris.ui.Box_Game" x="414" y="32" w="334" h="590"/>
+		<box className="com.sllx.tetris.ui.Box_Button" x="788" y="32" w="334" h="124"/>
+		<box className="com.sllx.tetris.ui.Box_Next" x="788" y="188" w="176" h="148"/>
+		<box className="com.sllx.tetris.ui.Box_Level" x="964" y="188" w="158" h="148"/>
+		<box className="com.sllx.tetris.ui.Box_Point" x="788" y="368" w="334" h="254"/>
+	</window>
+</game>
